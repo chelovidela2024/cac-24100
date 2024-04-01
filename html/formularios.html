@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4 - HTML - Formularios </title>
+</head>
+<body>
+    <form method="get">
+        <h1>Formularios</h1>
+        <div>
+           
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre"> 
+            <hr>
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input id="edad" type="number" min="0" max="120" name="edad">
+            <hr>
+        </div>
+        <div>
+            <label for="fechaNac">Fecha Nacimiento:</label>
+            <input type="date" id="fechaNac" value="31/02/2024" name="fechaNac">
+        </div>
+       <hr> 
+        <div>
+            <span style="color: blue;">Turno</span>
+            <div>
+                <input type="radio" name="turno" value="mañana"> Mañana
+                <input type="radio" name="turno" value="vespertino"> Vespertino
+                <input type="radio" name="turno" value="tarde"> Tarde
+                <input type="radio" name="turno" value="noche"> Noche
+    
+            </div>
+        </div>
+        <hr>
+        <div>
+            <label>Estudios:</label>
+            <span>Primaria</span>
+            <input type="checkbox" name="turno" value="pri" checked> 
+            <span>Secundaria</span>
+            <input type="checkbox" name="turno" value="sec"> 
+            <span>Universitaria</span>
+            <input type="checkbox" name="turno" value="uni"> 
+
+        </div>
+        <div>
+            <label>Nacionaidad</label>
+            <select id="nacionalida" 
+                    name="nacionalidad">
+
+                <option value="Ar" selected>Argentina </option>
+                <option value="Bo">Bolivia</option>
+                <option value="Pa">Paraguay</option>
+                <option value="Ur">Uruguay</option>
+
+            </select>
+        </div>
+        <div>
+            <label>Datos Adicionales</label>
+            <div>
+                <textarea cols="50" 
+                rows="5"
+                name="datosAdicionales">Ing. mas datos </textarea>
+
+            </div>
+        </div>
+        <div>
+            <label> CV</label>
+            <div>
+                <input type="file" name="" id="cv">
+            </div>
+
+        </div>
+
+        <button>Enviar</button>
+        <button type="reset">Limpiar</button>
+        
+    </form>
+
+    <section>
+        <h2>Login</h2>
+        <form>
+            <label>Usuario</label>
+            <input type="text">
+            <label>Contraseña</label>
+            <input type="password">
+            <button>Login</button>
+        </form>
+    </section>
+    <section>
+        <form action="https://www.google.com.ar">
+            <h3>Buscar</h3>
+            <input type="search" name="q">
+            <button>Buscar</button>
+            
+        </form>
+    </section>
+    <section>
+        <form>
+            <h3>Reetear Contraseña</h3>
+            <label>email</label>
+            <input type="email">
+            <button>Resetear</button>
+            
+        </form>
+    </section>
+</body>
+</html>
